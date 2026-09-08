@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный портал Судебного Департамента РФ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            font-family: 'Times New Roman', Georgia, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .document-container {
+            width: 100%;
+            max-width: 650px;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 50px 45px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .header-top {
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #475569;
+            margin-bottom: 5px;
+        }
+        .header-main {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: #0f172a;
+            line-height: 1.4;
+            border-bottom: 2px solid #0f172a;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .doc-id {
+            font-family: monospace;
+            font-size: 11px;
+            color: #64748b;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+        .doc-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            color: #0f172a;
+        }
+        .registry-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+        .registry-table td {
+            padding: 8px 10px;
+            border: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        .registry-table td.label {
+            background: #f8fafc;
+            font-weight: bold;
+            width: 30%;
+            color: #334155;
+        }
+        .doc-content {
+            font-size: 14px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #0f172a;
+        }
+        .doc-content p {
+            text-indent: 30px;
+            margin-bottom: 15px;
+        }
+        .resolution-block {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 4px solid #d97706;
+            padding: 20px;
+            margin: 25px 0;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .resolution-block strong {
+            color: #9a3412;
+            text-transform: uppercase;
+        }
+        .footer-sign {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #334155;
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 20px;
+        }
+        .btn-action {
+            width: 100%;
+            background: #0f172a;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 30px;
+            transition: background 0.2s;
+        }
+        .btn-action:hover {
+            background: #1e293b;
+        }
+        
+        #final-screen {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        .stamp-box {
+            border: 3px double #16a34a;
+            color: #16a34a;
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            transform: rotate(-2deg);
+            margin: 25px 0;
+            font-family: sans-serif;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="document-container">
+        <!-- СЦЕНА 1: ОФИЦИАЛЬНЫЙ БЛАНК -->
+        <div id="court-document">
+            <div class="header-top">Российская Федерация</div>
+            <div class="header-main">
+                УПРАВЛЕНИЕ СУДЕБНОГО ДЕПАРТАМЕНТА В ХАБАРОВСКОМ КРАЕ<br>
+                <span style="font-size: 12px; font-weight: normal; color: #475569;">городской округ «Город Хабаровск», ул. Серышева, д. 60</span>
+            </div>
+            
+            <div class="doc-id">УИН: 27RS0001-01-2026-009941-88</div>
+            
+            <div class="doc-title">Официальное извещение<br><span style="font-size: 13px; font-weight: normal; text-transform: none; color: #475569;">о начале досудебного производства</span></div>
+            
+            <table class="registry-table">
+                <tr>
+                    <td class="label">Адресат (Ответчик)</td>
+                    <td>Семушина Анастасия Владимировна</td>
+                </tr>
+                <tr>
+                    <td class="label">Орган взыскания</td>
+                    <td>Центральный районный суд г. Хабаровска</td>
+                </tr>
+                <tr>
+                    <td class="label">Ответственное лицо</td>
+                    <td>Судебный пристав-исполнитель Ковальчук Александр Валерьевич</td>
+                </tr>
+                <tr>
+                    <td class="label">Текущий статус</td>
+                    <td>Передано к досудебному рассмотрению и калибровке обязательств</td>
+                </tr>
+                <tr>
+                    <td class="label">Дата регистрации</td>
+                    <td>24 августа 2026 года</td>
+                </tr>
+            </table>
+
+            <div class="doc-content">
+                <p>Настоящим ведомственным уведомлением сообщается, что в отношении гражданки Семушиной Анастасии Владимировны Управлением Судебного Департамента по Хабаровскому краю инициировано специальное административное производство.</p>
+                <p>На основании рапорта межведомственной комиссии от 24.08.2026 г., ответчику вменяется систематическое нарушение регламента общественного порядка посредством бесконтрольного распределения личной харизмы, умышленного присвоения внимания окружающих лиц и превышения допустимых норм очарования без получения лицензии государственного образца.</p>
+                
+                <div class="resolution-block">
+                    <strong>Постановление по делу № KHV-2026/08:</strong><br>
+                    Руководствуясь положениями ст. 27.1 КоАП РФ, в целях оперативного урегулирования инцидента сторон, к ответчику Семушиной А. В. применяется безальтернативная ограничительная мера: <strong>угощения автора роллами,просмотра аватара и немедленный отчет кружок с момента прочтения понда</strong>.
+                </div>
+            </div>
+            
+            <button class="btn-action" onclick="signDocument()">Подписать протокол</button>
+        </div>
+
+        <!-- СЦЕНА 2: СУДЕБНЫЙ ВЕРДИКТ -->
+        <div id="final-screen">
+            <div class="header-top">Центральный районный суд г. Хабаровска</div>
+            <div class="header-main" style="border-bottom: 1px solid #cbd5e1; padding-bottom: 10px;">
+                РЕШЕНИЕ СУДЕБНОГО ОРГАНА ВСТУПИЛО В СИЛУ
+            </div>
+            
+            <div class="stamp-box">Урегулировано до суда</div>
+            
+            <div class="doc-content" style="text-align: center;">
+                <p style="text-indent: 0; font-size: 16px; font-weight: bold; margin-bottom: 25px;">
+                    Протокол успешно подписан электронной подписью ответчика.
+                </p>
+                <p style="text-indent: 0; color: #334155; line-height: 1.6;">
+                    Гражданка Семушина Анастасия Владимировна официально признала свою вину в запредельной милоте и согласилась на применение штрафных санкций.<br><br>
+                    Анастасия Владимировна, судебное производство закрыто. Просим вас безотлагательно отписать Корнилову В.С. об успешном урегулировании постановления.
+                </p>
+            </div>
+            
+            <div class="footer-sign">
+                <div>Канцелярия суда ХК</div>
+                <div style="font-family: monospace; color: #94a3b8;">[ЭЦП_ПОДТВЕРЖДЕНО]</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function signDocument() {
+            document.getElementById('court-document').style.display = 'none';
+            document.getElementById('final-screen').style.display = 'block';
+            window.scrollTo(0, 0); 
+        }
+    </script>
+
+</body>
+</html>
